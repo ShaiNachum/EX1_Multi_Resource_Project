@@ -411,5 +411,19 @@
         android:textColor="@color/primary_color"
         android:text="Attempts: 0"/>
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_time"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:autoSizeTextType="uniform"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:maxLines="1"
+        android:textColor="@color/primary_color"
+        android:layout_marginHorizontal="32dp"
+        tools:text="00:00:00" />
+
 
 </RelativeLayout>

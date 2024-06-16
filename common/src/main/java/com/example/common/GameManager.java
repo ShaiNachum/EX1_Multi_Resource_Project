@@ -101,6 +101,10 @@ public class GameManager {
         }
     }
 
+    public boolean isGameOver(){
+        return matches == 8;
+    }
+
     public int getCoverStatus(int i, int j) {
         return covers[i][j];
     }
