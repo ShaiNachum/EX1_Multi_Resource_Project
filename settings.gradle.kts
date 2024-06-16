@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "EX1_Multi_Resource_Project"
 include(":flags_memory_game")
 include(":cars_memory_game")
+include(":common")

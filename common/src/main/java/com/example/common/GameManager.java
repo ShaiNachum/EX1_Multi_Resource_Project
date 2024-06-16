@@ -1,4 +1,4 @@
-package com.example.ex1_multi_resource_project;
+package com.example.common;
 
 import java.util.ArrayList;
 
@@ -18,8 +18,8 @@ public class GameManager {
     private int card_2_j;
 
 
-    public GameManager(){
-        this.allCountries = DataManager.getCards();
+    public GameManager(DataManager_Base dataManager){
+        this.allCountries = dataManager.getCards();
 
         InitCovers();
 

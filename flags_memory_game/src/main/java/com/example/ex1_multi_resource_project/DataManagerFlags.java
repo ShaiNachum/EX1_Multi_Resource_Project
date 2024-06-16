@@ -1,10 +1,13 @@
 package com.example.ex1_multi_resource_project;
 
+import com.example.common.Card;
+import com.example.common.DataManager_Base;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.UUID;
 
-public class DataManager {
+public class DataManagerFlags extends DataManager_Base {
     private static String[] flags = new String[]{
             "https://www.countryflags.com/wp-content/uploads/china-flag-png-large.png",
             "https://www.countryflags.com/wp-content/uploads/india-flag-png-large.png",
@@ -16,7 +19,9 @@ public class DataManager {
             "https://www.countryflags.com/wp-content/uploads/canada-flag-png-large.png"
     };
 
-    public static ArrayList<Card> getCards(){
+
+    @Override
+    public ArrayList<Card> getCards() {
         ArrayList<Card> countries = new ArrayList<>();
 
         for (int i = 0 ; i < flags.length ; i++){
