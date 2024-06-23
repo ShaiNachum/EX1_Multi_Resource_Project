@@ -49,23 +49,12 @@ public class Activity_Panel_Base extends AppCompatActivity {
         generalStartTimer();
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        generalStopTimer();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        generalStartTimer();
-    }
-
-
     private void generalStartTimer() {
         if (!generalTimerOn) {
             generalTimerOn = true;
+
             startTime = System.currentTimeMillis();
+
             generalTimer = new Timer();
             generalTimer.schedule(new TimerTask() {
                 @Override
